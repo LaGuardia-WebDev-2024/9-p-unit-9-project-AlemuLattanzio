@@ -12,6 +12,11 @@ h1{
   color: white;
 }
 
+h2{
+  font-size: 30px;
+  color: black;
+  background-color: white;
+}
 #myCanvas {
   background-size: 600px 400px;
   border-radius: 30px;
