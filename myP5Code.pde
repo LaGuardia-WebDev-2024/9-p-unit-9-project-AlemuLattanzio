@@ -42,9 +42,9 @@ draw = function(){
   
   if(mousePressed){
   text("drum roll", random(0, 600), random(0, 600));
-  drawgrass(10,300);
-drawgrass(200,300);
-drawgrass(400,300);
+  drawball(10,300);
+drawball(200,300);
+drawball(400,300);
   }
   
 };
@@ -54,22 +54,11 @@ mouseClicked = function(){
 };
 
 
-var funWithKeys = function(){
-  if(keyPressed){
-    var randomIntensity = random(50,255);
-    if(key == 'r'){fill(randomIntensity,0,0);}
-    if(key == 'g'){fill(0,randomIntensity,0);}
-    if(key == 'w'){fill(255,255,255);}
-    if(key == 'c'){background(255,255,255,150);}
-  }
-};
-
-
-//🟡drawgrass Function - will run when called
-var drawgrass = function(grassX, grassY, grassColor){
-  textSize(80);
-  fill(grassColor);
-  text("🎱", grassX, grassY);
+//🟡drawball Function - will run when called
+var drawball = function(ballX, ballY, ballColor){
+  textSize(70);
+  fill(ballColor);
+  text("🎱", ballX, ballY);
   
   textSize(35);
   text("🎱", mouseX, mouseY);
